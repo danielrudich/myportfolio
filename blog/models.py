@@ -2,4 +2,6 @@ from django.db import models
 
 class Blog(models.Model):
     image = models.ImageField(upload_to='images/')
-    summary = models.CharField(max_length=400)
+    title= models.CharField(max_length=1000)
+    pubdate = models.DateTimeField()
+    post = models.TextField()
