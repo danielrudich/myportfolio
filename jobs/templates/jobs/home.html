@@ -54,12 +54,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="{% static 'RUDICH DANIEL AARON RESUME 3162020.pdf' %}">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'allblogs'%}">Blog</a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -70,10 +64,11 @@
   <section class="jumbotron text-center">
     <div class="container">
       <h1>Daniel Aaron Rudich</h1>
-      <p class="lead text-muted">BSBA- Finance Graduate from the University of Florida. I was the Executive Treasurer for JSU and JHM in 2019-2020 and the External Philanthropy Chair for the Alpha Epsilon Pi Fraternity in Fall 2019. I have experience in financial services and am learning to code. Currently pursuing MS- Data Science at Florida Atlantic University.</p>
+      <p class="lead text-muted">BSBA-Finance graduate from the University of Florida. Executive Treasurer for the Jewish Student Union 2019-2020, External Philanthropy Chair for the Alpha Epsilon Pi Fraternity Fall 2019. Experience in financial services and learning to code (Python, Django, HTML5). Currently pursuing MS-Data Science at Florida Atlantic University.</p>
       <p>
         <a href="mailto:rudichdaniel@ufl.edu" class="btn btn-primary my-2">Email Me</a>
         <a  href= 'https://www.linkedin.com/in/daniel-rudich-058023151/' class="btn btn-primary my-2">LinkedIn</a>
+        <a  href="{% static 'RUDICH DANIEL AARON RESUME 3162020.pdf' %}" class="btn btn-primary my-2">Resume</a>
       </p>
       <img src={% static 'linkedin.jpg' %} />
     </div>
