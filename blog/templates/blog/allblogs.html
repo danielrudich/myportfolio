@@ -74,12 +74,12 @@
 <br />
 
 {% for blog in blogs.all %}
-{{blog.title}}
+<a href=""><h3>{{blog.title}}</h3></a>
+<h6>{{blog.pubdate}}</h6>
 <br />
-{{blog.pubdate}}
+<img class='img-fluid' src="{{blog.image.url}}" height=200 width=200/>
 <br />
-{{blog.post}}
-
+<p>{{blog.summarize}}</p>
 {% endfor %}
 </div>
 

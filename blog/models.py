@@ -5,3 +5,8 @@ class Blog(models.Model):
     title= models.CharField(max_length=1000)
     pubdate = models.DateTimeField()
     post = models.TextField()
+
+    def summarize(self):
+        return self.post[:100]
+    def pubdate_nice(self):
+        return self.pubdate.strftime('%b %e %Y')
