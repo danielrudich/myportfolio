@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Daniel's Blog</title>
+    <title>{{blog.title}}</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
 
@@ -66,22 +66,21 @@
 <main role="main">
   <div class="container">
 
-<h1 class='text-center pt-3'>Welcome to My Blog</h1>
+<h1 class='text-center pt-3'>{{blog.title}}</h1>
 <br />
 <br />
-<h2>Latest Posts</h2>
+<h2 class= "text-center">{{blog.pubdate_nice}}</h2>
 <hr />
 <br />
 <br />
 
-{% for blog in blogs.all %}
-<a href="{% url 'detail' blog.id %}"><h3>{{blog.title}}</h3></a>
-<h6>{{blog.pubdate_nice}}</h6>
-<br />
 <img class='img-fluid' src="{{blog.image.url}}" height=200 width=200/>
 <br />
-<p>{{blog.summarize}}</p>
-{% endfor %}
+<br />
+
+<h6>{{blog.post}}</h6>
+
+
 </div>
 
 

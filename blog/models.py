@@ -10,3 +10,5 @@ class Blog(models.Model):
         return self.post[:100]
     def pubdate_nice(self):
         return self.pubdate.strftime('%b %e %Y')
+    def __str__(self):
+        return self.title
